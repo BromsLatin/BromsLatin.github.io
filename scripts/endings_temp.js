@@ -1,0 +1,185 @@
+const endingsJSON = `{
+    "nouns": [
+        [
+            {
+                "nominative": "a",
+                "accusative": "am",
+                "genitive": "ae",
+                "dative": "ae",
+                "ablative": "a"
+            },
+            {
+                "nominative": "ae",
+                "accusative": "as",
+                "genitive": "arum",
+                "dative": "is",
+                "ablative": "is"
+            }
+        ],
+        [
+            {
+                "nominative": "us",
+                "accusative": "um",
+                "genitive": "i",
+                "dative": "o",
+                "ablative": "o"
+            },
+            {
+                "nominative": "i",
+                "accusative": "os",
+                "genitive": "orum",
+                "dative": "is",
+                "ablative": "is"
+            },
+            {
+                "nominative": "um",
+                "accusative": "um",
+                "genitive": "i",
+                "dative": "o",
+                "ablative": "o"
+            },
+            {
+                "nominative": "a",
+                "accusative": "a",
+                "genitive": "orum",
+                "dative": "is",
+                "ablative": "is"
+            }
+        ],
+        [
+            {
+                "nominative": "?",
+                "accusative": "es",
+                "genitive": "is",
+                "dative": "i",
+                "ablative": "e/i"
+            },
+            {
+                "nominative": "es",
+                "accusative": "es",
+                "genitive": "(i)um",
+                "dative": "ibus",
+                "ablative": "ibus"
+            },
+            {
+                "nominative": "?",
+                "accusative": "?",
+                "genitive": "is",
+                "dative": "i",
+                "ablative": "e/i"
+            },
+            {
+                "nominative": "a",
+                "accusative": "a",
+                "genitive": "(i)um",
+                "dative": "ibus",
+                "ablative": "ibus"
+            }
+        ],
+        [
+            {
+                "nominative": "us",
+                "accusative": "um",
+                "genitive": "us",
+                "dative": "ui",
+                "ablative": "u"
+            },
+            {
+                "nominative": "us",
+                "accusative": "us",
+                "genitive": "uum",
+                "dative": "ibus",
+                "ablative": "ibus"
+            }
+        ],
+        [
+            {
+                "nominative": "es",
+                "accusative": "em",
+                "genitive": "ei",
+                "dative": "ei",
+                "ablative": "e"
+            },
+            {
+                "nominative": "es",
+                "accusative": "es",
+                "genitive": "erum",
+                "dative": "ebus",
+                "ablative": "ebus"
+            }
+        ]
+    ],
+    "verbs": {
+        "pluperfect": {
+            "active": {
+                "indicative": ["eram", "eras", "erat", "eramus", "eratis", "erant"],
+                "subjunctive": ["issem", "isses", "isset", "issemus", "issetis", "issent"]
+            },
+            "passive": {
+                "indicative": ["eram", "eras", "erat", "eramus", "eratis", "erant"],
+                "subjunctive": ["essem", "esses", "esset", "essemus", "essetis", "essent"]
+            }
+        },
+        "perfect": {
+            "active": {
+                "indicative": ["i", "isti", "it", "imus", "istis", "erunt"],
+                "subjunctive": ["erim",  "eris", "erit", "erimus", "eritis", "erint"]
+            },
+            "passive": {
+                "indicative": ["sum", "es", "est", "sumus", "estis", "sunt"],
+                "subjunctive": ["sim",  "sis", "sit", "simus", "sitis", "sint"]
+            }
+        },
+        "imperfect": {
+            "active": {
+                "indicative": ["bam", "bas", "bat", "bamus", "batis", "bant"],
+                "subjunctive": ["rem", "res", "ret", "remus", "retis", "rent"]
+            },
+            "passive": {
+                "indicative": ["bar", "baris", "batur", "bamur", "bamini", "bantur"],
+                "subjunctive": ["rer", "reris", "retur", "remur", "remini", "rentur"]
+            }
+        },
+        "present": {
+            "active": {
+                "indicative": ["o", "s", "t", "mus", "tis", "nt"],
+                "subjunctive": {
+                    "1": ["em", "es", "et", "emus", "etis", "ent"],
+                    "234": ["am", "as", "at", "amus", "atis", "ant"]
+                }
+            },
+            "passive": {
+                "indicative": ["or", "ris", "tur", "mur", "mini", "ntur"],
+                "subjunctive": {
+                    "1": ["er", "eris", "etur", "emur", "emini", "entur"],
+                    "234": ["ar", "aris", "atur", "amur", "amini", "antur"]
+                }
+            }
+        },
+        "future": {
+			"active": {
+				"indicative": {
+					"12": ["bo", "bis", "bit", "bimus", "bitis", "bunt"],
+					"34": ["am", "es", "et", "emus", "etis", "erunt"]
+				},
+				"subjunctive": ["sim",  "sis", "sit", "simus", "sitis", "sint"]
+			},
+			"passive": {
+				"indicative": {
+					"12": ["bor", "beris", "betur", "bemur", "bemini", "buntur"],
+					"34": ["ar", "eris", "etur", "emur", "emini", "entur"]
+				},
+				"subjunctive": ["essem", "esses", "esset", "essemus", "essetis", "essent"]
+			}
+        },
+        "future perfect": {
+			"active": {
+				"indicative": ["ero", "eris", "erit", "erimus", "eritis", "erint"]
+			},
+			"passive": {
+				"indicative": ["ero", "eris", "erit", "erimus", "eritis", "erunt"]
+			}
+        }
+    }
+}
+`

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="endings-table inactive" id="nouns-table">
+        <tr>
+            <th>Person</th>
+            <th>Ending</th>
+        </tr>
+        <tr>
+            <td>Nominative</td>
+            <td><input type="text" class="text-box" id="nouns-box1"></td>
+        </tr>
+        <tr>
+            <td>Accusative</td>
+            <td><input type="text" class="text-box" id="nouns-box2"></td>
+        </tr>
+        <tr>
+            <td>Genitive</td>
+            <td><input type="text" class="text-box" id="nouns-box3"></td>
+        </tr>
+        <tr>
+            <td>Dative</td>
+            <td><input type="text" class="text-box" id="nouns-box4"></td>
+        </tr>
+        <tr>
+            <td>Ablative</td>
+            <td><input type="text" class="text-box" id="nouns-box5"></td>
+        </tr>
+        <tr>
+            <td>Submit</td>
+            <td><input type="button" value="Submit" class="submit" onclick="javascript:submit(nouns, [0, 1, 2, 3, 4])"></td>
+        </tr>
+        <tr>
+            <td>Nominative Plural</td>
+            <td><input type="text" class="text-box" id="nouns-box6"></td>
+        </tr>
+        <tr>
+            <td>Accusative Plural</td>
+            <td><input type="text" class="text-box" id="nouns-box7"></td>
+        </tr>
+        <tr>
+            <td>Genitive Plural</td>
+            <td><input type="text" class="text-box" id="nouns-box8"></td>
+        </tr>
+        <tr>
+            <td>Dative Plural</td>
+            <td><input type="text" class="text-box" id="nouns-box9"></td>
+        </tr>
+        <tr>
+            <td>Ablative Plural</td>
+            <td><input type="text" class="text-box" id="nouns-box10"></td>
+        </tr>
+        <tr>
+            <td>Submit</td>
+            <td><input type="button" value="Submit" class="submit" onclick="javascript:submit(nouns, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])"></td>
+        </tr>
+    </table>
+
+    <table class="endings-table inactive" id="verbs-table">
+        <tr>
+            <th>Person</th>
+            <th>Ending</th>
+        </tr>
+        <tr>
+            <td>1st</td>
+            <td><input type="text" class="text-box" id="verbs-box1"></td>
+        </tr>
+        <tr>
+            <td>2nd</td>
+            <td><input type="text" class="text-box" id="verbs-box2"></td>
+        </tr>
+        <tr>
+            <td>3rd</td>
+            <td><input type="text" class="text-box" id="verbs-box3"></td>
+        </tr>
+        <tr>
+            <td>Submit</td>
+            <td><input type="button" value="Submit" class="submit" onclick="javascript:submit(verbs, [0, 1, 2])"></td>
+        </tr>
+        <tr>
+            <td>1st plural</td>
+            <td><input type="text" class="text-box" id="verbs-box4"></td>
+        </tr>
+        <tr>
+            <td>2nd plural</td>
+            <td><input type="text" class="text-box" id="verbs-box5"></td>
+        </tr>
+        <tr>
+            <td>3rd plural</td>
+            <td><input type="text" class="text-box" id="verbs-box6"></td>
+        </tr>
+        <tr>
+            <td>Submit</td>
+            <td><input type="button" value="Submit" class="submit" onclick="javascript:submit(verbs, [0, 1, 2, 3, 4, 5])"></td>
+        </tr>
+    </table>
+
+
+    <script src="../scripts/current.js"></script>
+    <script src="../scripts/init.js"></script>
+    <script type="module" src="../endings/word.js"></script>
+    <script type="module" src="../endings/nouns.js"></script>
+    <script type="module" src="../endings/verbs.js"></script>
+    <script src="../scripts/endings_temp.js"></script>   
+    <script src="../scripts/parser.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="nouns-form">
+        <p>For nouns: </p>
+        <label>Declension: </label>
+        <select name="declension" id="declension">
+            <option value="1">1st Declension</option>
+            <option value="2">2nd Declension</option>
+            <option value="3">3rd Declension </option>
+            <option value="4">4th Declension</option>
+            <option value="5">5th Declension</option>
+        </select>
+        <br>
+        <label>Neuter?</label><input type="checkbox" name="neuter" id="neuter">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <form id="verbs-form">
+        <p>For verbs: </p>
+        <label>Tense: </label>
+        <select name="Tense" id="tense">
+            <option value="1">Future Tense</option>
+            <option value="2">Present Tense</option>
+            <option value="2n">Imperfect Tense</option>
+            <option value="3">Perfect Tense </option>
+            <option value="3n">Pluperfect Tense</option>
+            <!-- sara +_+ -->
+        </select>
+        <br>
+        <label>Voice</label>
+        <br>
+        <input type="radio" name="voice" id="active"> <label>Active</label>
+        <br>
+        <input type="radio" name="voice" id="passive"> <label>Passive</label>
+        <br>
+        <label>Mood</label>
+        <br>
+        <input type="radio" name="mood" id="indicative"> <label>Indicative</label>
+        <br>
+        <input type="radio" name="mood" id="subjunctive"> <label>Subjunctive</label>
+        <br>
+        <label>Conjugation: </label>
+        <select name="conjugation" id="conjugation">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="form_manager.js"></script>
+</body>
+</html>
